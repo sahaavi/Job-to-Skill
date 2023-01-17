@@ -1,0 +1,34 @@
+# Hello Viji here 
+
+This has Viji's contributions in building API wrapper using openai and 
+indeed APIs.
+
+## 01-Intro
+
+All chapter sections start with a second-level (`##`) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
+
+### An unnumbered section {-}
+
+Chapters and sections are numbered by default. To un-number a heading, add a `{.unnumbered}` or the shorter `{-}` at the end of the heading, like in this section.
+
+## 02 - Parts
+
+|Date | Module | Activity | Outcome/Achievements| Additional info|
+|:---:| :------|:--------| :------|:------|
+|15-Jan-2023||||abc|
+
+
+## 03-references
+Add all outside references and biliography links
+
+|Date | Link | Comments|
+|:---:| :--------| :------|
+|abc|||
+
+## 04-dependencies, open questions and comments
+
+Anything to communicate with other project members or consider for future.
+
+|Date | Module | Description| Comments|
+|:---:| :------|:------|:------|
+|15-Jan-2023||||abc|
