@@ -15,8 +15,10 @@ Chapters and sections are numbered by default. To un-number a heading, add a `{.
 
 |Date | Module | Activity | Outcome/Achievements| Additional info|
 |:---:| :------|:--------| :------|:------|
-|15-Jan-2023||||abc|
-
+|13-Jan-2023|NA|Initiation|Research on API and brainstorm with team||
+|14,15-Jan-2023|NA|Initiation|Research on API and brainstorm with team||
+|16-Jan-2023|NA|Initiation|Group discussion on next steps||
+|16-Jan-2023|NA|Initiation|Contribution log creation and logging||
 
 ## 03-references
 Add all outside references and biliography links
