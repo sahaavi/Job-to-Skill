@@ -1,0 +1,39 @@
+# Hi Avishek here 
+
+This includes Avishek's contribution into developing an API wrapper utilising OpenAI and Indeed APIs.
+
+## 01-Intro
+
+All chapter sections start with a second-level (`##`) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
+
+### An unnumbered section {-}
+
+Chapters and sections are numbered by default. To un-number a heading, add a `{.unnumbered}` or the shorter `{-}` at the end of the heading, like in this section.
+
+## 02 - Parts
+
+|Date | Module | Activity | Outcome/Achievements| Additional info|
+|:---:| :------|:--------| :------|:------|
+|13-Jan-2023|NA|Initiation|Researched on API and brainstorm with team||
+|14-Jan-2023|NA|Initiation|Read Documentation of OpenAi API & test the api||
+|16-Jan-2023|NA|Initiation|Group discussion on next steps||
+|16-Jan-2023|NA|Initiation|Created Github Repo||
+|17-Jan-2023|NA|Initiation|Applied for Indeed API publisher number||
+|17-Jan-2023|NA|Initiation|Confirmation on using openAI||
+|18-Jan-2023|NA|Proposal|Tested LinkedIn RapidAPI||
+|18-Jan-2023|NA|Proposal|Checked availability of glassdoor API ||
+
+## 03-references
+Add all outside references and biliography links
+
+|Date | Link | Comments|
+|:---:| :--------| :------|
+|abc|||
+
+## 04-dependencies, open questions and comments
+
+Anything to communicate with other project members or consider for future.
+
+|Date | Module | Description| Comments|
+|:---:| :------|:------|:------|
+|15-Jan-2023||||abc|
