@@ -19,6 +19,9 @@ Chapters and sections are numbered by default. To un-number a heading, add a `{.
 |14,15-Jan-2023|NA|Initiation|Research on API and brainstorm with team||
 |16-Jan-2023|NA|Initiation|Group discussion on next steps||
 |16-Jan-2023|NA|Initiation|Contribution log creation and logging||
+|17-Jan-2023|NA|Initiation|Researched different APIs available||
+|17-Jan-2023|NA|Initiation|Confirmation on using openAI||
+|18-Jan-2023|NA|Proposal|Created draft proposal||
 
 ## 03-references
 Add all outside references and biliography links
