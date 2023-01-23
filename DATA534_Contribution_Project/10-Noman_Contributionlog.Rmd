@@ -1,4 +1,4 @@
-# Hi Avishek here 
+# Hi Noman here 
 
 This includes Avishek's contribution into developing an API wrapper utilising OpenAI and Indeed APIs.
 
