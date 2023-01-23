@@ -1,6 +1,6 @@
 # Hi Noman here 
 
-This includes Avishek's contribution into developing an API wrapper utilising OpenAI and Indeed APIs.
+This includes Noman's contribution into developing an API wrapper utilising OpenAI and Indeed APIs.
 
 ## 01-Intro
 
