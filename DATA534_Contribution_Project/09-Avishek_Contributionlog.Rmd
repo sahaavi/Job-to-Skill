@@ -21,9 +21,12 @@ Chapters and sections are numbered by default. To un-number a heading, add a `{.
 |17-Jan-2023|NA|Initiation|Applied for Indeed API publisher number||
 |17-Jan-2023|NA|Initiation|Confirmation on using openAI||
 |18-Jan-2023|NA|Initiation|Tested LinkedIn RapidAPI||
-|18-Jan-2023|NA|Initiation|Checked availability of glassdoor API ||
+|18-Jan-2023|NA|Initiation|Checked availability of glassdoor API||
 |19-Jan-2023|NA|Initiation|Tried to scrape LinkedIn ||
 |20-Jan-2023|NA|Proposal|Review Proposal ||
+|27-Jan-2023|NA|Project|Worked on Openai Api Parameters tuning||
+|28-Jan-2023|NA|Project|Wrote functions to call API and clean the results for output||
+|28-Jan-2023|NA|Proposal|Discussed progress and future work||
 
 ## 03-references
 Add all outside references and biliography links
