@@ -1,6 +1,6 @@
-# Hi Avishek here 
+# Hi Noman here 
 
-This includes Avishek's contribution into developing an API wrapper utilising OpenAI and Indeed APIs.
+This includes Noman's contribution into developing an API wrapper utilising OpenAI and Indeed APIs.
 
 ## 01-Intro
 
@@ -22,7 +22,10 @@ Chapters and sections are numbered by default. To un-number a heading, add a `{.
 |18-Jan-2023|NA|Proposal|Explored Indeed and its scraping potential for interview questions||
 |18-Jan-2023|NA|Proposal|Researched OpenAI's capabilities to curate interview questions||
 |19-Jan-2023|NA|Proposal|Met with team to further discuss scope and functionality||
-|20-Jan-2023|NA|Read project proposal||
+|20-Jan-2023|NA||Proposal|Read project proposal||
+|27-Jan-2023|NA||Project|played around with openAI api and the temperature parameter||
+|28-Jan-2023|NA||Project|Discussed progress and any roadblocks with group||
+|29-Jan-2023|NA||Project|Worked on interview questions wrapper function||
 
 ## 03-references
 Add all outside references and biliography links
