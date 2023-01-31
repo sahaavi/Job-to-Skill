@@ -1,14 +1,16 @@
+import sys
+sys.path.append("e:\\Study\\UBC\\Block 4\\DATA 534 Web and Cloud Computing\\Project\\Job-to-Skill")
+
 import unittest
 
-
-import openai_api as oa
+from job_skill import openai_api as oa
 
 class TestOpenaiApi(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
         print("openai_api test starts")
-        cls.api_key = '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'
+        cls.api_key = 'x'
         cls.job_description = """Understand the day-to-day issues that our business faces, which can be better understood with data
             Collecting and analyzing data from a variety of sources (such as college and university websites, government databases, and industry reports)
             Cleaning, formatting, and organizing the data in a way that is useful and easy to understand
