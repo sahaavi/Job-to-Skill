@@ -26,7 +26,11 @@ Chapters and sections are numbered by default. To un-number a heading, add a `{.
 |20-Jan-2023|NA|Proposal|Review Proposal ||
 |27-Jan-2023|NA|Project|Worked on Openai Api Parameters tuning||
 |28-Jan-2023|NA|Project|Wrote functions to call API and clean the results for output||
-|28-Jan-2023|NA|Proposal|Discussed progress and future work||
+|28-Jan-2023|NA|Project|Discussed progress and future work||
+|30-Jan-2023|NA|Project|Build Test Cases [Unit Test]||
+|30-Jan-2023|NA|Project|Build Test Suite||
+|30-Jan-2023|NA|Project|Generate Coverage Report||
+|30-Jan-2023|NA|Project|Initiated Travis CI for continuous integration||
 
 ## 03-references
 Add all outside references and biliography links
