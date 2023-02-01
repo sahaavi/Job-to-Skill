@@ -31,6 +31,10 @@ Chapters and sections are numbered by default. To un-number a heading, add a `{.
 |30-Jan-2023|NA|Project|Build Test Suite||
 |30-Jan-2023|NA|Project|Generate Coverage Report||
 |30-Jan-2023|NA|Project|Initiated Travis CI for continuous integration||
+|31-Jan-2023|NA|Project|Added some functions||
+|31-Jan-2023|NA|Project|Set environment variable||
+|31-Jan-2023|NA|Project|Initiated Github Action for continuous integration||
+|31-Jan-2023|NA|Project|Added build passing stamp||
 
 ## 03-references
 Add all outside references and biliography links
