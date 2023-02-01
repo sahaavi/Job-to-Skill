@@ -15,17 +15,21 @@ Chapters and sections are numbered by default. To un-number a heading, add a `{.
 |Date | Module | Activity | Outcome/Achievements| Additional info|
 |:---:| :------|:--------| :------|:------|
 |13-Jan-2023|NA|Initiation|Explored project suggestions and use cases for OpenAI||
-|14-Jan-2023|NA|Initiation|Further exploring openAI and brainstorming with team||
-|16-Jan-2023|NA|Initiation|Group discussion on next steps||
+|14-Jan-2023|NA|Meeting|Further exploring openAI and brainstorming with team||
+|16-Jan-2023|NA|Meeting|Group discussion on next steps||
 |17-Jan-2023|NA|Initiation|Confirmation on using openAI with team||
 |17-Jan-2023|NA|Initiation|Explored Indeed and its scraping potential||
 |18-Jan-2023|NA|Proposal|Explored Indeed and its scraping potential for interview questions||
 |18-Jan-2023|NA|Proposal|Researched OpenAI's capabilities to curate interview questions||
-|19-Jan-2023|NA|Proposal|Met with team to further discuss scope and functionality||
+|19-Jan-2023|NA|Meeting|Met with team to further discuss scope and functionality||
 |20-Jan-2023|NA||Proposal|Read project proposal||
-|27-Jan-2023|NA||Project|played around with openAI api and the temperature parameter||
-|28-Jan-2023|NA||Project|Discussed progress and any roadblocks with group||
+|28-Jan-2023|NA||Meeting|Discussed progress and any roadblocks with group||
+|28-Jan-2023|NA||Project|played around with openAI api and the temperature parameter to see best response||
 |29-Jan-2023|NA||Project|Worked on interview questions wrapper function||
+|30-Jan-2023||Project|Tried to workaround TravisCI issue for limit exceeded||
+|30-Jan-2023||Project|Searched for alternative CI's||
+|31-Jan-2023||Project|Added extra helper functions for API call and finetuned outputs||
+|31-Jan-2023||Project|Worked on visualization for tools and languages||
 
 ## 03-references
 Add all outside references and biliography links
