@@ -1,6 +1,11 @@
 name: Build and Test [Python 3.9]
 
-on: push
+on:
+  push:
+    branches: [ main ]
+
+env:
+  env_file: .env
 
 jobs:
   build:
