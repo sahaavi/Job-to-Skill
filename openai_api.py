@@ -1,4 +1,5 @@
 import openai
+import altair as alt
 
 def get_skills(response):
     """
@@ -103,3 +104,9 @@ def call_api_questions(api_key, skills):
         #Handle rate limit error (we recommend using exponential backoff)
         print(f"OpenAI API request exceeded rate limit: {e}")
         pass
+    
+    
+    
+  
+def skills_visual(df):
+    pass
