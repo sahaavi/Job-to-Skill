@@ -61,7 +61,9 @@ def scrape_job_description(job_array):
                 #process and get job desc
                 get_jd_info = BeautifulSoup(get_info.text)
                 trim_jd=get_jd_info.select('div')
+                
                 job_desc=trim_jd[85].text.replace('\n','')
+
                 job_desc_lst.append(job_desc)
                 
                 #Get job title, city and country
@@ -71,14 +73,20 @@ def scrape_job_description(job_array):
                 job_title_lst.append(titstr[0])
                 job_loc_lst.append(titstr[1])
             else:
-                job_desc_lst.append("Invalid URL, analysis skipped")       
+                job_desc_lst.append("Invalid URL, analysis skipped")
+                job_title_lst.append("")
+                job_loc_lst.append("")
 
         except Ex as e:
             #Handle exceptions with processing
             print(f"Error, analysis skipped for this job: {e}")
-            job_desc_lst.append("Invalid URL, analysis skipped") 
+            job_desc_lst.append("Invalid URL, analysis skipped")
+            job_title_lst.append("")
+            job_loc_lst.append("")
+
 
     #build pandas dataframe as output of scraped and parsed data
+
     df1 = pd.DataFrame(list(zip(inputarr, job_desc_lst,job_title_lst,job_loc_lst)), columns = ["Job URL","Job Description","Job Title","Job Location"])
     
 
