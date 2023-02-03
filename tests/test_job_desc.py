@@ -48,14 +48,19 @@ class TestJobDescScrp(unittest.TestCase):
         jd_title="Dropbox hiring Director of Data Science, New Initiatives "
         jd_loc="Vancouver, British Columbia, Canada "
         test_df1=pd.DataFrame({"Job URL":[jd_url],"Job Description":[jd_text],"Job Title":[jd_title],"Job Location":[jd_loc]})
- #       df2=pd.DataFrame({'ind':[1,2]})
-        
-        print(test_df1)
-        print(assert_frame_equal(test_df1, jd.scrape_job_description(["https://www.linkedin.com/jobs/view/3442691887"])))
+ 
+        assert_frame_equal(test_df1, jd.scrape_job_description(["https://www.linkedin.com/jobs/view/3442691887"]))
 
     # test case
-    #def test_call_api_tech_skills(self): 
-    #    self.assertIsInstance(oa.call_api_tech_skills(self.api_key, self.job_description), dict)
+    def test_df_output_invalid(self): 
+        test_desc="Invalid URL, analysis skipped"
+        test_title=""
+        test_loc=""
+        test_url= "https://www.linkedin.com/jobs/view/34426"
+        test_df2=pd.DataFrame({"Job URL":[test_url],"Job Description":[test_desc],"Job Title":[test_title],"Job Location":[test_loc]})
+ 
+        assert_frame_equal(test_df1, jd.scrape_job_description(["https://www.linkedin.com/jobs/view/34426"]))
+
 
 unittest.main(argv=[''], verbosity=2, exit=False)
 
