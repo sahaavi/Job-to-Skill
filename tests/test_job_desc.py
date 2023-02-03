@@ -59,7 +59,7 @@ class TestJobDescScrp(unittest.TestCase):
         test_url= "https://www.linkedin.com/jobs/view/34426"
         test_df2=pd.DataFrame({"Job URL":[test_url],"Job Description":[test_desc],"Job Title":[test_title],"Job Location":[test_loc]})
  
-        assert_frame_equal(test_df1, jd.scrape_job_description(["https://www.linkedin.com/jobs/view/34426"]))
+        assert_frame_equal(test_df2, jd.scrape_job_description(["https://www.linkedin.com/jobs/view/34426"]))
 
 
 unittest.main(argv=[''], verbosity=2, exit=False)
