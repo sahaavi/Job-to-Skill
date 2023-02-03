@@ -51,7 +51,7 @@ class TestJobDescScrp(unittest.TestCase):
  #       df2=pd.DataFrame({'ind':[1,2]})
         print(jd_url,len(jd_url))
         print(test_df1)
-        assert_frame_equal(test_df1, jd.scrape_job_description(jd_url))
+        assert_frame_equal(test_df1, jd.scrape_job_description("https://www.linkedin.com/jobs/view/3442691887"))
 
     # test case
     #def test_call_api_tech_skills(self): 
