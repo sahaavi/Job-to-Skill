@@ -45,7 +45,7 @@ class TestJobDescScrp(unittest.TestCase):
     def test_df_output(self):
         df1=pd.DataFrame({'ind':[1,2]})
         df2=pd.DataFrame({'ind':[1,2]})
-        self.assert_frame_equal(df1, df1)
+        assert_frame_equal(df1, df1)
 
     # test case
     #def test_call_api_tech_skills(self): 
