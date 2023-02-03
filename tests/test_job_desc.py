@@ -12,7 +12,7 @@ import os
 import unittest
 from dotenv import load_dotenv
 
-from job_skill import job_desc.py as jd
+from job_skill import job_desc as jd
 
 class TestJobDescScrp(unittest.TestCase):
 
