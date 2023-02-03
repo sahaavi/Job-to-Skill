@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-
+import pandas as pd
 
 def scrape_job_description(job_array):
     
