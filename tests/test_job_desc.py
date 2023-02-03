@@ -49,7 +49,7 @@ class TestJobDescScrp(unittest.TestCase):
         jd_loc="Vancouver, British Columbia, Canada "
         df1=pd.DataFrame({"Job URL":[jd_url],"Job Description":[jd_text],"Job Title":[jd_title],"Job Location":[jd_loc]})
  #       df2=pd.DataFrame({'ind':[1,2]})
-        assert_frame_equal(df1, scrape_job_description(jd_url))
+        assert_frame_equal(df1, jd.scrape_job_description(jd_url))
 
     # test case
     #def test_call_api_tech_skills(self): 
