@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 import pandas as pd
+import requests
+from bs4 import BeautifulSoup
 
 def scrape_job_description(job_array):
     
