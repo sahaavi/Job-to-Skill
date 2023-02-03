@@ -16,6 +16,7 @@ sys.path.append("C:\\Users\\vijip\\DATA\DATA534\\Job-to-Skill")
 import os
 
 import unittest
+import pandas as pd
 from pandas.testing import assert_frame_equal
 from dotenv import load_dotenv
 
