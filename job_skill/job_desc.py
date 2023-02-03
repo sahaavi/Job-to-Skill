@@ -65,9 +65,9 @@ def scrape_job_description(job_array):
                 job_title_lst.append("")
                 job_loc_lst.append("")
 
-        except Ex as e:
+        except Error as ex:
             #Handle exceptions with processing
-            print(f"Error, analysis skipped for this job: {e}")
+            print(f"Error, analysis skipped for this job: {ex}")
             job_desc_lst.append("Invalid URL, analysis skipped")
             job_title_lst.append("")
             job_loc_lst.append("")
