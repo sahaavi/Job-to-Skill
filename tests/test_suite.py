@@ -1,7 +1,7 @@
 import unittest
 
 from test_openai_api import TestOpenaiApi
-from job_desc import TestJobDescScrp
+from test_job_desc import TestJobDescScrp
 
 def my_suite():
     suite = unittest.TestSuite()
