@@ -21,9 +21,17 @@ def visualize_tools(dictionary):
 
     return chart
 
-def to_list(df):
-    tech_skills = df_test['Technical Skills'].tolist()
-    tech_skills
+    
+
+def parse_df(df, columnname):
+    column_list = df[columnname].tolist()
+    list_full = []
+    for item in column_list:
+        split_item = item[1:-1].split(', ')
+        for i in split_item:
+            list_full.append(i.strip("'"))
+            
+    return list_full
 
 
 
