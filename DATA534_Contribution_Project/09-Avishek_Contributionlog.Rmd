@@ -35,7 +35,9 @@ Chapters and sections are numbered by default. To un-number a heading, add a `{.
 |31-Jan-2023|NA|Project|Set environment variable||
 |31-Jan-2023|NA|Project|Initiated Github Action for continuous integration||
 |31-Jan-2023|NA|Project|Added build passing stamp||
-
+|04-Feb-2023|NA|Project|Modified Viji's code to add my part||
+|04-Feb-2023|NA|Project|Created run.py to run the whole application at once.||
+|04-Feb-2023|NA|Project|Created main driver.py to show the user interaction||
 ## 03-references
 Add all outside references and biliography links
 
