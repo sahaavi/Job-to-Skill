@@ -20,3 +20,11 @@ def visualize_tools(dictionary):
     ))
 
     return chart
+
+def to_list(df):
+    tech_skills = df_test['Technical Skills'].tolist()
+    tech_skills
+
+
+
+    
