@@ -173,7 +173,7 @@ def call_api_skills_percent(api_key, job_description):
             engine="text-davinci-003",
             temperature=0.1,
             prompt=prompt,
-            max_tokens=100)
+            max_tokens=256)
         response = get_skills(response)
         result = skills_percentage(response)
         return result
@@ -231,7 +231,7 @@ def call_api_tech_skills(api_key, job_description):
             engine="text-davinci-003",
             temperature=0.1,
             prompt=prompt,
-            max_tokens=100)
+            max_tokens=256)
         result = get_all(response)
         return result
 
