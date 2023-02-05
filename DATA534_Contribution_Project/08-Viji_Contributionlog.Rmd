@@ -29,7 +29,17 @@ Chapters and sections are numbered by default. To un-number a heading, add a `{.
 |26-Jan-2023||Coding|Not able to scrape from indeed due to security||
 |26-Jan-2023||Coding|Able to scrape from LinkedIn only when logged in||
 |27-Jan-2023||Coding|Created first scrape from LinkedIn to share for downstream||
+|27-Jan-2023||Coding|Created code of conduct and sent for review to team||
 |31-Jan-2023||Coding|Worked on fine tuning scraping and created full output today||
+|01-Feb-2023||Coding|Worked on fine tuning scraping and error functions||
+|02-Feb-2023||Unit test and CICD|Worked on unit test and CICD ||
+|03-Feb-2023||Presentation|Draft presentation and project review with team||
+|04-Feb-2023||Presentation|Adding more inputs||
+|06-Feb-2023||Documentation|Planning to work on documentation||
+||||||
+||Decisions|NA|Not to use RapidAPI as the sources are not known for righteous use||
+||Decisions|NA|Other job sites do not provide job description so going with LinkedIn||
+||Decisions|NA|Final plots and output to user - reviewed and decided as a team||
 
 ## 03-references
 Add all outside references and biliography links
@@ -44,4 +54,6 @@ Anything to communicate with other project members or consider for future.
 
 |Date | Module | Description| Comments|
 |:---:| :------|:------|:------|
-|15-Jan-2023||||abc|
+||Job scraping|Linked in Easy apply||
+||Job scraping|Indeed||
+||Job output|Salary inputs and recommendations||
