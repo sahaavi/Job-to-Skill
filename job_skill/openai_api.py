@@ -506,34 +506,8 @@ def call_api_interview(api_key, skills):
 
     dictionary = {
         "Questions": questions,
-        "Responses": answers
+        "AI Suggested Response": answers
     }
 
     df = pd.DataFrame.from_dict(dictionary)
     return df
-
-
-# this will take the dictionary from the skills output, turn it into a df and make a visual using altair
-# should the user be manually inputting the dictoianry from the output or we make another api call in this function or even pass the output 
-# from call_api_tech_skills and this function in that one? 
-
-def visualize_tools(dictionary):
-
-    #explode the df by the languages and tools
-    df = pd.DataFrame.from_dict(dictionary)
-    boom_lang = df.explode("Programming Languages")
-    boom_tools = df.explode("Tools")        
-
-
-    chart =  (alt.Chart(boom_lang).mark_bar().encode(
-        alt.X('count()'),
-        alt.Y('Programming Languages', sort='x')
-
-    )) | (alt.Chart(boom_tools).mark_bar().encode(
-        alt.X('count()'),
-        alt.Y('Tools', sort='x')
-
-    ))
-
-    return chart
-
