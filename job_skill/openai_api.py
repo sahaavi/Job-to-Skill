@@ -1,6 +1,5 @@
 import openai
 import pandas as pd
-import altair as alt
 
 pd.options.display.max_colwidth = None
 
@@ -511,6 +510,7 @@ def call_api_interview(api_key, skills):
             "AI Suggested Response": answers
         }
 
+
         df = pd.DataFrame.from_dict(dictionary)
         return df
 
@@ -528,5 +528,3 @@ def call_api_interview(api_key, skills):
         #Handle rate limit error (we recommend using exponential backoff)
         print(f"OpenAI API request exceeded rate limit: {e}")
         pass
-
-
