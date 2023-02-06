@@ -26,6 +26,13 @@ Chapters and sections are numbered by default. To un-number a heading, add a `{.
 |27-Jan-2023|NA||Project|played around with openAI api and the temperature parameter||
 |28-Jan-2023|NA||Project|Discussed progress and any roadblocks with group||
 |29-Jan-2023|NA||Project|Worked on interview questions wrapper function||
+|30-Jan-2023|NA||Project|had to add extra function to API call||
+|31-Jan-2023|NA||added doc strings to functions||
+|03-Feb-2023|NA||worked on visualization functions||
+|04-Feb-2023|NA|Project|discussed finalization with team and plans moving forward||
+|05-Feb-2023|NA||fixed all issues with visualization functions||
+|05-Feb-2023|NA||added pie chart for distribution of locations||
+|05-Feb-2023|NA||helper functions for parsing data for visuals||
 
 ## 03-references
 Add all outside references and biliography links
