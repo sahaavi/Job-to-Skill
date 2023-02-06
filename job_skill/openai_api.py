@@ -497,17 +497,36 @@ def call_api_interview(api_key, skills):
 
 
     """
-    questions = []
-    answers = []
-    for item in skills:
-        q = call_api_questions(api_key, item)
-        questions =  questions + q
-        answers = answers  + call_api_answers(api_key, q)
+    try:
 
-    dictionary = {
-        "Questions": questions,
-        "AI Suggested Response": answers
-    }
+        questions = []
+        answers = []
+        for item in skills:
+            q = call_api_questions(api_key, item)
+            questions =  questions + q
+            answers = answers  + call_api_answers(api_key, q)
 
-    df = pd.DataFrame.from_dict(dictionary)
-    return df
+        dictionary = {
+            "Questions": questions,
+            "AI Suggested Response": answers
+        }
+
+        df = pd.DataFrame.from_dict(dictionary)
+        return df
+
+    except openai.error.APIError as e:
+        #Handle API error here, e.g. retry or log
+        print(f"OpenAI API returned an API Error: {e}")
+        pass
+
+    except openai.error.APIConnectionError as e:
+        #Handle connection error here
+        print(f"Failed to connect to OpenAI API: {e}")
+        pass
+
+    except openai.error.RateLimitError as e:
+        #Handle rate limit error (we recommend using exponential backoff)
+        print(f"OpenAI API request exceeded rate limit: {e}")
+        pass
+
+
