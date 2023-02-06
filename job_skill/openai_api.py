@@ -1,6 +1,5 @@
 import openai
 import pandas as pd
-import altair as alt
 
 pd.options.display.max_colwidth = None
 
@@ -497,43 +496,35 @@ def call_api_interview(api_key, skills):
 
 
     """
-    questions = []
-    answers = []
-    for item in skills:
-        q = call_api_questions(api_key, item)
-        questions =  questions + q
-        answers = answers  + call_api_answers(api_key, q)
+    try:
 
-    dictionary = {
-        "Questions": questions,
-        "Responses": answers
-    }
+        questions = []
+        answers = []
+        for item in skills:
+            q = call_api_questions(api_key, item)
+            questions =  questions + q
+            answers = answers  + call_api_answers(api_key, q)
 
-    df = pd.DataFrame.from_dict(dictionary)
-    return df
-
-
-# this will take the dictionary from the skills output, turn it into a df and make a visual using altair
-# should the user be manually inputting the dictoianry from the output or we make another api call in this function or even pass the output 
-# from call_api_tech_skills and this function in that one? 
-
-def visualize_tools(dictionary):
-
-    #explode the df by the languages and tools
-    df = pd.DataFrame.from_dict(dictionary)
-    boom_lang = df.explode("Programming Languages")
-    boom_tools = df.explode("Tools")        
+        dictionary = {
+            "Questions": questions,
+            "AI Suggested Response": answers
+        }
 
 
-    chart =  (alt.Chart(boom_lang).mark_bar().encode(
-        alt.X('count()'),
-        alt.Y('Programming Languages', sort='x')
+        df = pd.DataFrame.from_dict(dictionary)
+        return df
 
-    )) | (alt.Chart(boom_tools).mark_bar().encode(
-        alt.X('count()'),
-        alt.Y('Tools', sort='x')
+    except openai.error.APIError as e:
+        #Handle API error here, e.g. retry or log
+        print(f"OpenAI API returned an API Error: {e}")
+        pass
 
-    ))
+    except openai.error.APIConnectionError as e:
+        #Handle connection error here
+        print(f"Failed to connect to OpenAI API: {e}")
+        pass
 
-    return chart
-
+    except openai.error.RateLimitError as e:
+        #Handle rate limit error (we recommend using exponential backoff)
+        print(f"OpenAI API request exceeded rate limit: {e}")
+        pass
