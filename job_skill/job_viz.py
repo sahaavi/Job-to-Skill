@@ -5,7 +5,7 @@ def visualize_info(df, df2):
     chart = (
     alt.Chart(df).mark_bar(color = '#FFCE54').encode(
         alt.X('count()', title = 'Count of Programming Languages', axis=alt.Axis(grid=False,tickMinStep=1,titleFontSize=13, labelFontSize=12)),
-        alt.Y('Programming Languages:N',title=None,  axis=alt.Axis(labelFontSize=11), sort='x')
+        alt.Y('Programming Languages',title=None,  axis=alt.Axis(labelFontSize=11), sort='x')
     ).properties(
         title=alt.TitleParams('In-Demand Skills in Job Descriptions: Prevalence of Programming Languages and Tools',fontSize=16),
         width=500,
@@ -13,14 +13,12 @@ def visualize_info(df, df2):
         &
     alt.Chart(df2).mark_bar(color = '#007BA7').encode(
         alt.X('count()',title ='Count of Tools', axis=alt.Axis(grid=False,tickMinStep=1, titleFontSize=13, labelFontSize=12)),
-        alt.Y('Tools:N', title=None, sort='x', axis=alt.Axis(labelFontSize=11))).properties(
+        alt.Y('Tools', title=None, sort='x', axis=alt.Axis(labelFontSize=11))).properties(
     width=500,
     height=200))
 
     return chart
 
-
-    
 
 def parse_df(df, columnname):
     column_list = df[columnname].tolist()
@@ -38,6 +36,25 @@ def parse_df(df, columnname):
 
     return df
 
+
+def visualize_location(df, columnname):
+    temp = df[columnname].tolist()
+    full_list = []
+    for item in temp:
+        i = item.split(',')[0]
+        full_list.append(i)
+
+    df = pd.DataFrame({columnname: full_list})
+    df_grouped = df.groupby(columnname).size().reset_index(name='count')
+    df_grouped
+
+    base = alt.Chart(df_grouped).encode(
+    theta=alt.Theta("count:Q", stack=True), color=alt.Color("Job Location:N", legend=None))
+    
+    pie = base.mark_arc(outerRadius=120)
+    text = base.mark_text(radius=140, size=10).encode(text="Job Location:N")
+
+    return (pie + text)
 
 
     
