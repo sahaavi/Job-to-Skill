@@ -506,12 +506,19 @@ def call_api_interview(api_key, skills):
 
         questions = []
         answers = []
+        serial = []
+
+        count = 1
         for item in skills:
             q = call_api_questions(api_key, item)
             questions =  questions + q
             answers = answers  + call_api_answers(api_key, q)
+            for i in range(0, 5):
+                serial.append(count)
+            count = count + 1
 
         dictionary = {
+            "Job Number": serial,
             "Questions": questions,
             "AI Suggested Response": answers
         }
