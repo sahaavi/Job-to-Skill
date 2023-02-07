@@ -47,4 +47,8 @@ Anything to communicate with other project members or consider for future.
 
 |Date | Module | Description| Comments|
 |:---:| :------|:------|:------|
-|15-Jan-2023||||abc|
+|27-Jan-2023|challenge||when attempting to get suggested AI interview response, setting API parameter (temperature) to a lower value was returning responses very objective to the skills provided... the responses were very short. This was not helpful, so changing temperatur to higher value gave more elaborate and creative responses but sometimes swayed from the topic so finding balance was key ||
+
+|04-Feb-2023|challenge||API token length was causing issues with how much of a response openAI gives so sometimes the answers would be too long for API to return||
+
+|04-Feb-2023||challenge||ran into some issue with charting, when exploding data from columns for charting, the values were combined as a string|
