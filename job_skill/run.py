@@ -8,11 +8,11 @@ from job_skill import job_desc as jd
 from job_skill import job_viz as jv
 from job_skill import openai_api as oa
 
-def call_api(df1):
-    # loading api key
-    load_dotenv()
-    api_key = os.getenv("API_KEY")
+# loading api key
+load_dotenv()
+api_key = os.getenv("API_KEY")
 
+def call_api(df1):
     df1['Skills_and_Percentage'] = None
     df1['Programming Languages'] = None
     df1['Tools'] = None
@@ -91,6 +91,7 @@ def main():
             df1 = pd.DataFrame(list(zip("", "","","","")), columns = ["Job URL","Job Description","Job Title","Job Location"])
             df1["Job Description"]=inputarr
             df1 = call_api(df1)
+            
         elif usr_in == 'B':
             df1 = jd.scrape_job_description(inputarr)
             ignore_df = None
@@ -105,34 +106,21 @@ def main():
             df1 = df1[df1["Job Description"] != "Invalid URL, analysis skipped"]
             df1 = call_api(df1)
             
-            #just saving df1 to a new variable
-            jobs_df = df1
-
-            #parse the jobs_df to clean columns and make ready for visualization
-            lang = jv.parse_df(jobs_df, 'Programming Languages')
-            tools = jv.parse_df(jobs_df, 'Tools')
-
-            #call function to return visual for tools and programming languages
-            #note this function returns a chart... not sure if need to print(jv.visualize_info(lang, tools)) 
-            #since this is not a pynb file
-            jv.visualize_info(lang, tools)
-
-            #call function to return visual for location distribution
-            jv.visualize_location(df_test, 'Job Location')
-
-            #prepare input for interview questions and suggested AI reponses
-            skills = df_test['Technical Skills'].tolist()
-
-            #get dataframe of questions and response
-            interview_df = oa.call_api_interview(api_key, skills)
-            interview_df
 
     except ValueError:
         print("Error: Number of jobs anticipated is not valid. Please enter an integer between 1 and 10 (both inclusive)")
     except Exception:
         print("An unknown error occurred. Please try again with valid inputs.")
 
-    print(df1)
+    # #prepare skills for interview questions and suggested AI reponses
+    skills = df1['Technical Skills'].tolist()
+
+    #get dataframe of questions and response
+    interview_df = oa.call_api_interview(api_key, skills)
     
+    df1 = df1.drop('Job Description', axis=1)
+    df1.to_csv('jobs.csv', index=False, mode='w')
+    interview_df.to_csv('interview.csv', index=False, mode='w')
+
 if __name__ == '__main__':
     main()
