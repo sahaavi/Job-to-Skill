@@ -1,6 +1,26 @@
 import pandas as pd
 import altair as alt
 
+def parse_df(df, columnname):
+
+    try:
+        column_list = df[columnname].tolist()
+        list_full = []
+        for item in column_list:
+            split_item = item[1:-1].split(', ')
+            for i in split_item:
+                list_full.append(i.strip("'"))
+
+        dictionary = {
+            columnname: list_full
+            }
+
+        df = pd.DataFrame.from_dict(dictionary) 
+
+        return df
+    except Exception as e:
+        return "Error in chart creation: " + str(e)
+
 def visualize_info(df, df2):
     try:
         chart = (
@@ -22,51 +42,36 @@ def visualize_info(df, df2):
 
     except Exception as e:
         return "Error in chart creation: " + str(e)
-        
-
-
-def parse_df(df, columnname):
-
-    try:
-        column_list = df[columnname].tolist()
-        list_full = []
-        for item in column_list:
-            split_item = item[1:-1].split(', ')
-            for i in split_item:
-                list_full.append(i.strip("'"))
-
-        dictionary = {
-            columnname: list_full
-            }
-
-        df = pd.DataFrame.from_dict(dictionary) 
-
-        return df
-    except Exception as e:
-        return "Error in chart creation: " + str(e)
 
 def visualize_location(df, columnname):
-    try:
-        temp = df[columnname].tolist()
-        full_list = []
-        for item in temp:
-            i = item.split(',')[0]
-            full_list.append(i)
+    if df[columnname].notna().all():
+        try:
+            temp = df[columnname].tolist()
+            full_list = []
+            for item in temp:
+                i = item.split(',')[0]
+                full_list.append(i)
 
-        df = pd.DataFrame({columnname: full_list})
-        df_grouped = df.groupby(columnname).size().reset_index(name='count')
-        df_grouped
+            df = pd.DataFrame({columnname: full_list})
+            df_grouped = df.groupby(columnname).size().reset_index(name='count')
+            df_grouped
 
-        base = alt.Chart(df_grouped).encode(
-        theta=alt.Theta("count:Q", stack=True), color=alt.Color("Job Location:N", legend=None))
+            base = alt.Chart(df_grouped).encode(
+            theta=alt.Theta("count:Q", stack=True), color=alt.Color("Job Location:N", legend=None, scale=alt.Scale(scheme='plasma')))
+
+            pie = base.mark_arc(outerRadius=200)
+            text = base.mark_text(radius=225, size=20, align='left').encode(text="count:Q")
+            text2 = base.mark_text(radius=260, size=15).encode(text="Job Location:N")
+            pie_chart = alt.layer(text,text2, pie).properties(title = alt.TitleParams('Job Distribution by Location', fontSize=16), height=600, width=600)
+
+            return pie_chart
         
-        pie = base.mark_arc(outerRadius=120)
-        text = base.mark_text(radius=140, size=10).encode(text="Job Location:N")
-
-        return (pie + text)
-
-    except Exception as e:
-        return "Error in chart creation: " + str(e)
+        except Exception as e:
+            return "Error in chart creation: " + str(e)
+        
+    else:
+        print("No locations available to build chart!")
+        return False
 
 
 
