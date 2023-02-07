@@ -1,6 +1,26 @@
 import pandas as pd
 import altair as alt
 
+def parse_df(df, columnname):
+
+    try:
+        column_list = df[columnname].tolist()
+        list_full = []
+        for item in column_list:
+            split_item = item[1:-1].split(', ')
+            for i in split_item:
+                list_full.append(i.strip("'"))
+
+        dictionary = {
+            columnname: list_full
+            }
+
+        df = pd.DataFrame.from_dict(dictionary) 
+
+        return df
+    except Exception as e:
+        return "Error in chart creation: " + str(e)
+
 def visualize_info(df, df2):
     try:
         chart = (
@@ -20,28 +40,6 @@ def visualize_info(df, df2):
 
         return chart
 
-    except Exception as e:
-        return "Error in chart creation: " + str(e)
-        
-
-
-def parse_df(df, columnname):
-
-    try:
-        column_list = df[columnname].tolist()
-        list_full = []
-        for item in column_list:
-            split_item = item[1:-1].split(', ')
-            for i in split_item:
-                list_full.append(i.strip("'"))
-
-        dictionary = {
-            columnname: list_full
-            }
-
-        df = pd.DataFrame.from_dict(dictionary) 
-
-        return df
     except Exception as e:
         return "Error in chart creation: " + str(e)
 

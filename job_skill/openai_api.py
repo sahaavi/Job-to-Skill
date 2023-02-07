@@ -354,9 +354,9 @@ def get_question_answers(response):
     """
     
     text = response["choices"][0]["text"]
-    responses = text.split("\n\n")
-    responses = [response.strip() for response in responses if response]
-    return responses
+    lines = text.strip().split('\n')
+    result = [line.split('.', 1)[1].strip() for line in lines]
+    return result
 
 
 def call_api_questions(api_key, skills):
@@ -441,7 +441,13 @@ def call_api_answers(api_key, questions):
     """
     openai.api_key = api_key
     pre_prompt = """Given the list of potential data science interview questions: """
-    post_prompt = """Return a relevant response to each interview question"""
+    post_prompt = """Return a relevant response to each interview question in the following form:
+    1. response
+    2. response
+    3. response
+    4. response
+    5. response
+    """
     prompt = pre_prompt + str(questions) + post_prompt
 
     try:
