@@ -495,10 +495,10 @@ def call_api_interview(api_key, skills):
     --------
     >>> call_api_interview("sk-ASCNHswueQ", "List[[skills],[skills],[skills],...]")
     
-    [Questions] [Responses]
-    [Q1]        [R1]
-    [Q2]        [R2]
-    [...]       [...]
+    [Job Number] [Questions] [Suggested AI Response]
+        [1]        [Q1]             [R1]          
+        [2]        [Q2]             [R2]
+        [...]      [...]            [...]
 
 
     """
