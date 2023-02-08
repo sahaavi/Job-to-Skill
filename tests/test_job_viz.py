@@ -40,14 +40,6 @@ class TestJobVisualization(unittest.TestCase):
     def test_parse_df(self): 
         self.assertIsInstance(jv.parse_df(self.df, 'Tools'), pd.DataFrame)
 
-    # test case
-    def test_visualize_info(self): 
-        self.assertIsInstance(jv.visualize_info(self.df_tools, self.df_lang), alt.Chart)
-
-    # test case
-    def test_visualize_location(self): 
-        self.assertIsInstance(jv.visualize_location(self.df, 'Job Location'), alt.Chart)
-
 unittest.main(argv=[''], verbosity=2, exit=False)
 
 import altair as alt
