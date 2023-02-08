@@ -1,6 +1,8 @@
 import sys
-sys.path.append("e:\\Study\\UBC\\Block 4\\DATA 534 Web and Cloud Computing\\Project\\Job-to-Skill")
+# sys.path.append("e:\\Study\\UBC\\Block 4\\DATA 534 Web and Cloud Computing\\Project\\Job-to-Skill")
+# sys.path.append('/Users/nomanmohammad/Desktop/Job-to-Skill')
 import os
+import pandas as pd
 
 import unittest
 from dotenv import load_dotenv
@@ -24,6 +26,10 @@ class TestOpenaiApi(unittest.TestCase):
             Compile and analyze data related to business' issues
             Develop clear visualizations to convey complicated data in a straightforward fashion."""
 
+        cls.job_skills = [['python', 'SQL', 'java']]
+        cls.interview_questions = ['What Big Data Technologies have you worked with?', 'What strategies have you used to capture and develop ideas?']
+
+
     # setting up for test
     def setUp(self):
         print("Test Setup")
@@ -44,5 +50,16 @@ class TestOpenaiApi(unittest.TestCase):
     def test_call_api_tech_skills(self): 
         self.assertIsInstance(oa.call_api_tech_skills(self.api_key, self.job_description), dict)
 
+    # test case
+    def test_call_api_questions(self): 
+        self.assertIsInstance(oa.call_api_questions(self.api_key, self.job_skills[0]), list)
+
+    # test case
+    def test_call_api_answers(self): 
+        self.assertIsInstance(oa.call_api_answers(self.api_key, self.interview_questions), list)
+
+    # test case
+    def test_call_api_interview(self): 
+        self.assertIsInstance(oa.call_api_interview(self.api_key, self.job_skills), pd.DataFrame)
+
 unittest.main(argv=[''], verbosity=2, exit=False)
-        

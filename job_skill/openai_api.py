@@ -345,11 +345,11 @@ def get_question_answers(response):
         }
         }
     
-        ["1. 'I have used data collection and analysis to inform decisions when I worked on a project that involved gathering customer feedback from surveys. I analyzed the survey responses, combined it with other data points and drew insights to inform strategy for improving customer service.'",
-        "2. 'I have extensive experience with cleaning, formatting and organizing data. I'm well-versed in using common data transformation tools, such as Excel and SQL, to restructure raw data into more meaningful and actionable information.'",
-        "3. 'I am proficient in using Excel to create sheets and other data visualization tools. I'm comfortable creating dynamic visualizations that effectively present key insights, such as pie charts, bar graphs, and line graphs.'",
-        "4. 'I have identified trends and patterns in data by using techniques such as data mining, cluster analysis, and regression analysis. As an example, I worked on a project where I examined customer sales data to identify buying trends among different age groups.'",
-        "5. 'I have worked with other teams to utilize data sets by providing support to decision makers, identifying areas of potential benefit or risk and providing insights on potential strategies or solutions. I have experience in automating processes, such as extracting data from systems, databases, and external sources, which enables us to quickly obtain the data needed to make informed decisions.'"]
+        ["'I have used data collection and analysis to inform decisions when I worked on a project that involved gathering customer feedback from surveys. I analyzed the survey responses, combined it with other data points and drew insights to inform strategy for improving customer service.'",
+        "' I have extensive experience with cleaning, formatting and organizing data. I'm well-versed in using common data transformation tools, such as Excel and SQL, to restructure raw data into more meaningful and actionable information.'",
+        "' I am proficient in using Excel to create sheets and other data visualization tools. I'm comfortable creating dynamic visualizations that effectively present key insights, such as pie charts, bar graphs, and line graphs.'",
+        "' I have identified trends and patterns in data by using techniques such as data mining, cluster analysis, and regression analysis. As an example, I worked on a project where I examined customer sales data to identify buying trends among different age groups.'",
+        "' I have worked with other teams to utilize data sets by providing support to decision makers, identifying areas of potential benefit or risk and providing insights on potential strategies or solutions. I have experience in automating processes, such as extracting data from systems, databases, and external sources, which enables us to quickly obtain the data needed to make informed decisions.'"]
 
     """
     
@@ -378,7 +378,7 @@ def call_api_questions(api_key, skills):
 
     Examples
     --------
-    >>> call_api_questions("sk-ASCNHswueQ", "List[skills]")
+    >>> call_api_questions("sk-ASCNHswueQ", "[skills]")
     
     ['How do you go about collecting and analyzing data?',
     'What techniques do you use to clean, format and organize data?',
@@ -432,7 +432,7 @@ def call_api_answers(api_key, questions):
 
     Examples
     --------
-    >>> call_api_answers("sk-ASCNHswueQ", "List[Questions]")
+    >>> call_api_answers("sk-ASCNHswueQ", "[questions]")
     
     ['How do you go about collecting and analyzing data?',
     'What techniques do you use to clean, format and organize data?',
@@ -499,7 +499,7 @@ def call_api_interview(api_key, skills):
         [1]        [Q1]             [R1]          
         [2]        [Q2]             [R2]
         [...]      [...]            [...]
-
+         [n]        [n]              [n]
 
     """
     try:
@@ -522,7 +522,6 @@ def call_api_interview(api_key, skills):
             "Questions": questions,
             "AI Suggested Response": answers
         }
-
 
         df = pd.DataFrame.from_dict(dictionary)
         return df
