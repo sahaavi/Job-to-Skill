@@ -1,0 +1,7 @@
+﻿python-dotenv==0.21.1
+openai==0.26.1
+pandas==1.5.2
+altair==4.2.2
+pandas
+beautifulsoup4==4.7.1
+requests==2.22.0
