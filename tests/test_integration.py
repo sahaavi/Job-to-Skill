@@ -58,7 +58,7 @@ class TestIntegration(unittest.TestCase):
         self.assertEqual(requests.get(self.url).status_code, 200)
 
     # testing integration between the parse_df function and visualize_info
-    def test_intgration_visualize_info_bar(self): 
+    def test_integration_visualize_info_bar(self): 
         df_tools2 = jv.parse_df(self.df, 'Tools')
         df_lang2 = jv.parse_df(self.df, 'Programming Languages')
         self.assertEqual(jv.visualize_info(df_lang2, df_tools2).to_dict()['vconcat'][0]['mark']['type'], 'bar')
