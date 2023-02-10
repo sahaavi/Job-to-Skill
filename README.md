@@ -1,5 +1,34 @@
 # Job-to-Skill
 
+## Group members: 
+- Avishek Saha: avisheksaha123@gmail.com
+- Noman Mohammad: noman0786@hotmail.com
+- Viji Rajagopalan: vijayalakshmi_r.here@yahoo.com
+
+
+## Directory Layout:
+| Section | Details|
+| -----------| -----------|
+|Project repository:| https://github.com/sahaavi/Job-to-Skill |
+|Execution:|Run driver.ipynb |
+|Package details:| Modules:  |
+|Documentation:| README.md, add usecase flow|
+|CI/CD:| Github action is used for CI/CD and details are provided below |
+
+## Training:
+<<<upload video>>>
+
+## Documentation:
+=======
+1. Training (Vignette) - add output and visualization
+2. README.md - Comprehensive list of files and functions for the program
+
+
+## Report Coverage:
+![IMAGE_DESCRIPTION](https://github.com/sahaavi/Job-to-Skill/blob/main/coverage_report.PNG)
+
+
+## Github Action CI Status:
 [![Build Status][build-shield]][build-url]
 [![Release][release-shield]][release-url]
 [![Forks][forks-shield]][forks-url]
