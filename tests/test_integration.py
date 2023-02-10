@@ -115,7 +115,6 @@ class TestIntegration(unittest.TestCase):
             prompt=prompt,
             max_tokens=256)
 
-
         self.assertIsInstance(oa.get_skills(response_json), list)
         
 
