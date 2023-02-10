@@ -22,7 +22,7 @@
 |CI/CD:| Github action is used for CI/CD and details are provided below |
 
 ### Video:
-<<<upload video>>>
+Job-to-Skill video -> https://youtu.be/SMLuaL3y2Yw
 
 ## Package details:
 ### run.py

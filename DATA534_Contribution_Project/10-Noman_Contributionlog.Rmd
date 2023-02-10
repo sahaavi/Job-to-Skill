@@ -33,6 +33,11 @@ Chapters and sections are numbered by default. To un-number a heading, add a `{.
 |05-Feb-2023|NA||fixed all issues with visualization functions||
 |05-Feb-2023|NA||added pie chart for distribution of locations||
 |05-Feb-2023|NA||helper functions for parsing data for visuals||
+|07-Feb-2023|NA||Project|writing unit tests for modules||
+|07-Feb-2023|NA||Presentation|finalizing presentation parts||
+|08-Feb-2023|NA||Project|updating visualizations, fine tuning parameters and overall look||
+|09-Feb-2023|NA||Project|writing integration tests for different modules||
+|09-Feb-2023|NA||Final|finalizing project for submission with team||
 
 ## 03-references
 Add all outside references and biliography links
