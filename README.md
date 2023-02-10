@@ -26,12 +26,14 @@ This module accepts input from the user. This acts as the main module that calls
  ```
  
 ### job_desc.py
-``` This module is used if user selects to input job URL from LinkedIn. 
+``` 
+This module is used if user selects to input job URL from LinkedIn. 
    iv. scrape_job_description - This method is used to create a beautifulsoup object and scrape details of the job using the urls input by the user. It processes url by url and scrapes job description if url is valid. If url is not valid, it displays an error to the user, skips particular url and processes the others. It returns a pandas dataframe with details of job description - job location, job url, job description and job title.
 ```
 
 ### openai_api.py
-``` This module has all functions related to the openai API calls to get job specific skill details from the job description. It then uses the skill details as input and uses openai API call again to get relevant questions for interview preparation based on the skills identified. This has two major openai API calls.
+``` 
+This module has all functions related to the openai API calls to get job specific skill details from the job description. It then uses the skill details as input and uses openai API call again to get relevant questions for interview preparation based on the skills identified. This has two major openai API calls.
    v. call_api_skills_percent - This method is used to call openAI api and return skills needed with Percentages. This uses two methods:
         get_skills - This method is used to extract only the skills with percentage line from api's response.
         skills_percentage - This method is used to make a dictionary of skills with percentages.
@@ -44,7 +46,8 @@ viii. call_api_answers - This method is used to call api and return suggested an
   ix. call_api_interview - This method calls functions vii and viii and returns interview question and answers in a dataframe format.
  ```
 ### job_viz.py
-``` This module has all functions related to the visualizations built for the output based on openai APIs output. 
+``` 
+This module has all functions related to the visualizations built for the output based on openai APIs output. 
    x. def parse_df - This method parses the dataframe with all information and selects only columns needed for different visualizations.
    xi. visualize_info - This method is to visualize tools/languages from the jobs dataframe.
   xii. visualize_location - This method is to visualize distribution of job locations (applicable only if job links were provided in input).
