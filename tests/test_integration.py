@@ -53,7 +53,7 @@ class TestIntegration(unittest.TestCase):
     def tearDownClass(cls):
         print("integration test finishes")
 
-    # tewsting integration between scrape_job_description and requests module for proper respnse
+    # testing integration between scrape_job_description and requests module for proper response
     def test_integration_scrape_job_description(self):
         self.assertEqual(requests.get(self.url).status_code, 200)
 
