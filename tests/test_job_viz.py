@@ -40,5 +40,10 @@ class TestJobVisualization(unittest.TestCase):
     def test_parse_df(self): 
         self.assertIsInstance(jv.parse_df(self.df, 'Tools'), pd.DataFrame)
 
-unittest.main(argv=[''], verbosity=2, exit=False)
+    def test_visualize_info(self): 
+        self.assertEqual(jv.visualize_info(self.df_lang, self.df_tools).to_dict()['vconcat'][0]['mark']['type'], 'bar')
 
+    def test_visualize_location(self): 
+        self.assertEqual(jv.visualize_location(self.df, 'Job Location').to_dict()['layer'][0]['mark']['type'], 'text')
+
+unittest.main(argv=[''], verbosity=2, exit=False)
