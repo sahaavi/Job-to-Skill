@@ -1,7 +1,7 @@
 # Hello Viji here 
 
 This has Viji's contributions in building API wrapper using openai and 
-indeed APIs.
+LinkedIn job scraping.
 
 ## 01-Intro
 
@@ -35,7 +35,12 @@ Chapters and sections are numbered by default. To un-number a heading, add a `{.
 |02-Feb-2023||Unit test and CICD|Worked on unit test and CICD ||
 |03-Feb-2023||Presentation|Draft presentation and project review with team||
 |04-Feb-2023||Presentation|Adding more inputs||
-|06-Feb-2023||Documentation|Planning to work on documentation||
+|06-Feb-2023||Documentation|Finalize presentation||
+|07-Feb-2023||Documentation|Review with team and submit presentations on Canvas||
+|08-Feb-2023||Presentation|Prepare for final presentation||
+|09-Feb-2023||Presentation|final presentation||
+|09-Feb-2023||Documentation|Readme.md updates for project||
+|09-Feb-2023||Final|Project final review with team and submission on Canvas!!!||
 ||||||
 ||Decisions|NA|Not to use RapidAPI as the sources are not known for righteous use||
 ||Decisions|NA|Other job sites do not provide job description so going with LinkedIn||
