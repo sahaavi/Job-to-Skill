@@ -42,6 +42,3 @@ class TestJobVisualization(unittest.TestCase):
 
 unittest.main(argv=[''], verbosity=2, exit=False)
 
-import altair as alt
-
-

@@ -27,8 +27,8 @@ def scrape_job_description(job_array):
      'https://ca.linkedin.com/jobs/view/lead-software-engineering-decision-management-platform-at-mastercard-3378359650']
     output:
     Job URL|Job Description|Job Title|Job Location
-0|https://ca.linkedin.com/jobs/view/lead-software|Our PurposeWe ...|Mastercard hiring Lead, Software Eng..|Vancouver, British Columbia, Canada|
-1|https://www.linkedin.com/jobs/view/3442691887|Company Description...|Dropbox hiring Director of Data S..|Vancouver, British Columbia, Canada|
+    0|https://ca.linkedin.com/jobs/view/lead-software|Our PurposeWe ...|Mastercard hiring Lead, Software Eng..|Vancouver, British Columbia, Canada|
+    1|https://www.linkedin.com/jobs/view/3442691887|Company Description...|Dropbox hiring Director of Data S..|Vancouver, British Columbia, Canada|
     
     """
     #create beautifulsoup object
