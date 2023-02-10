@@ -1,3 +1,7 @@
+import sys
+sys.path.append("e:\\Study\\UBC\\Block 4\\DATA 534 Web and Cloud Computing\\Project\\Job-to-Skill")
+sys.path.append("e:\\Study\\UBC\\Block 4\\DATA 534 Web and Cloud Computing\\Project\\Job-to-Skill\\tests")
+
 import unittest
 
 from test_openai_api import TestOpenaiApi
