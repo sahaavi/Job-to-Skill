@@ -1,0 +1,54 @@
+# Hi Noman here 
+
+This includes Noman's contribution into developing an API wrapper utilising OpenAI and Indeed APIs.
+
+## 01-Intro
+
+All chapter sections start with a second-level (`##`) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
+
+### An unnumbered section {-}
+
+Chapters and sections are numbered by default. To un-number a heading, add a `{.unnumbered}` or the shorter `{-}` at the end of the heading, like in this section.
+
+## 02 - Parts
+
+|Date | Module | Activity | Outcome/Achievements| Additional info|
+|:---:| :------|:--------| :------|:------|
+|13-Jan-2023|NA|Initiation|Explored project suggestions and use cases for OpenAI||
+|14-Jan-2023|NA|Initiation|Further exploring openAI and brainstorming with team||
+|16-Jan-2023|NA|Initiation|Group discussion on next steps||
+|17-Jan-2023|NA|Initiation|Confirmation on using openAI with team||
+|17-Jan-2023|NA|Initiation|Explored Indeed and its scraping potential||
+|18-Jan-2023|NA|Proposal|Explored Indeed and its scraping potential for interview questions||
+|18-Jan-2023|NA|Proposal|Researched OpenAI's capabilities to curate interview questions||
+|19-Jan-2023|NA|Proposal|Met with team to further discuss scope and functionality||
+|20-Jan-2023|NA||Proposal|Read project proposal||
+|27-Jan-2023|NA||Project|played around with openAI api and the temperature parameter||
+|28-Jan-2023|NA||Project|Discussed progress and any roadblocks with group||
+|29-Jan-2023|NA||Project|Worked on interview questions wrapper function||
+|30-Jan-2023|NA||Project|had to add extra function to API call||
+|31-Jan-2023|NA||added doc strings to functions||
+|03-Feb-2023|NA||worked on visualization functions||
+|04-Feb-2023|NA|Project|discussed finalization with team and plans moving forward||
+|05-Feb-2023|NA||fixed all issues with visualization functions||
+|05-Feb-2023|NA||added pie chart for distribution of locations||
+|05-Feb-2023|NA||helper functions for parsing data for visuals||
+
+## 03-references
+Add all outside references and biliography links
+
+|Date | Link | Comments|
+|:---:| :--------| :------|
+|abc|||
+
+## 04-dependencies, open questions and comments
+
+Anything to communicate with other project members or consider for future.
+
+|Date | Module | Description| Comments|
+|:---:| :------|:------|:------|
+|27-Jan-2023|challenge||when attempting to get suggested AI interview response, setting API parameter (temperature) to a lower value was returning responses very objective to the skills provided... the responses were very short. This was not helpful, so changing temperatur to higher value gave more elaborate and creative responses but sometimes swayed from the topic so finding balance was key ||
+
+|04-Feb-2023|challenge||API token length was causing issues with how much of a response openAI gives so sometimes the answers would be too long for API to return||
+
+|04-Feb-2023||challenge||ran into some issue with charting, when exploding data from columns for charting, the values were combined as a string|

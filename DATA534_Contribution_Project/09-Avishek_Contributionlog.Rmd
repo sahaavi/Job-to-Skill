@@ -1,0 +1,54 @@
+# Hi Avishek here 
+
+This includes Avishek's contribution into developing an API wrapper utilising OpenAI and Indeed APIs.
+
+## 01-Intro
+
+All chapter sections start with a second-level (`##`) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
+
+### An unnumbered section {-}
+
+Chapters and sections are numbered by default. To un-number a heading, add a `{.unnumbered}` or the shorter `{-}` at the end of the heading, like in this section.
+
+## 02 - Parts
+
+|Date | Module | Activity | Outcome/Achievements| Additional info|
+|:---:| :------|:--------| :------|:------|
+|13-Jan-2023|NA|Initiation|Researched on API and brainstorm with team||
+|14-Jan-2023|NA|Initiation|Read Documentation of OpenAi API & test the api||
+|16-Jan-2023|NA|Initiation|Group discussion on next steps||
+|16-Jan-2023|NA|Initiation|Created Github Repo||
+|17-Jan-2023|NA|Initiation|Applied for Indeed API publisher number||
+|17-Jan-2023|NA|Initiation|Confirmation on using openAI||
+|18-Jan-2023|NA|Initiation|Tested LinkedIn RapidAPI||
+|18-Jan-2023|NA|Initiation|Checked availability of glassdoor API||
+|19-Jan-2023|NA|Initiation|Tried to scrape LinkedIn ||
+|20-Jan-2023|NA|Proposal|Review Proposal ||
+|27-Jan-2023|NA|Project|Worked on Openai Api Parameters tuning||
+|28-Jan-2023|NA|Project|Wrote functions to call API and clean the results for output||
+|28-Jan-2023|NA|Project|Discussed progress and future work||
+|30-Jan-2023|NA|Project|Build Test Cases [Unit Test]||
+|30-Jan-2023|NA|Project|Build Test Suite||
+|30-Jan-2023|NA|Project|Generate Coverage Report||
+|30-Jan-2023|NA|Project|Initiated Travis CI for continuous integration||
+|31-Jan-2023|NA|Project|Added some functions||
+|31-Jan-2023|NA|Project|Set environment variable||
+|31-Jan-2023|NA|Project|Initiated Github Action for continuous integration||
+|31-Jan-2023|NA|Project|Added build passing stamp||
+|04-Feb-2023|NA|Project|Modified Viji's code to add my part||
+|04-Feb-2023|NA|Project|Created run.py to run the whole application at once.||
+|04-Feb-2023|NA|Project|Created main driver.py to show the user interaction||
+## 03-references
+Add all outside references and biliography links
+
+|Date | Link | Comments|
+|:---:| :--------| :------|
+|abc|||
+
+## 04-dependencies, open questions and comments
+
+Anything to communicate with other project members or consider for future.
+
+|Date | Module | Description| Comments|
+|:---:| :------|:------|:------|
+|15-Jan-2023||||abc|
