@@ -5,6 +5,7 @@
 [![Downloads][downloads-shield]][downloads-url]
 [![Stargazers][stars-shield]][stars-url]
 [![MIT License][license-shield]][license-url]
+[![CodeFactor](https://www.codefactor.io/repository/github/sahaavi/job-to-skill/badge)](https://www.codefactor.io/repository/github/sahaavi/job-to-skill)
 
 ## Group members: 
 - Avishek Saha: avisheksaha123@gmail.com
